@@ -16,6 +16,7 @@
 Government air quality sensors are expensive and sparse. A city might have only 2-3 sensors, leaving vast residential areas with no data on the air they breathe.
 
 This project builds a **"Virtual Sensor"**. It uses the **K-Nearest Neighbors (KNN)** algorithm to estimate the PM2.5 (Particulate Matter) level of *any* specific coordinate (Latitude/Longitude) by analyzing data from the nearest actual sensors.
+## Screenshot <img width="1646" height="388" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/f201b5d7-ed2f-4764-8a57-b84622718891" />
 
 ## 🧠 The Science: Spatial Interpolation
 Unlike standard classification, this project uses **KNN Regression** with a twist.
