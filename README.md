@@ -43,3 +43,44 @@ Spatial-AQI-Estimator/
 │
 ├── requirements.txt      # Project Dependencies
 └── README.md             # Documentation
+
+How to Run Locally
+Clone the Repository
+
+Bash
+
+git clone [https://github.com/YOUR-USERNAME/Spatial-AQI-Estimator-KNN.git](https://github.com/YOUR-USERNAME/Spatial-AQI-Estimator-KNN.git)
+cd Spatial-AQI-Estimator-KNN
+Install Dependencies
+
+Bash
+
+pip install -r requirements.txt
+Setup Data
+
+Download city_day.csv from Kaggle.
+
+Place it inside the data/ folder.
+
+Run the Virtual Sensor
+
+Bash
+
+python src/app.py
+🧪 Usage Example
+When you run the tool, you can select "Demo Mode".
+
+Scenario: A location between Delhi and Gurugram (Lat: 28.55, Long: 77.15) has no sensor.
+
+AI Prediction: The model looks at Delhi (North), Gurugram (South), and nearby hubs to triangulate the pollution level.
+
+Output: Estimated PM2.5: 145.2 (Unhealthy)
+
+🔮 Future Scope
+Heatmap Visualization: plotting the estimated AQI on a Google Map interface.
+
+Wind Direction Factor: Improving accuracy by accounting for wind blowing pollution from one city to another.
+
+Real-time API: Connecting to OpenWeatherMap for live data fetching.
+
+Created by Ayush S from Maharaja Institute of Technology
